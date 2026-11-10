@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Great_Vibes } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
@@ -14,12 +13,6 @@ const body = localFont({
   display: "swap",
 });
 
-const script = Great_Vibes({
-  variable: "--font-script-face",
-  weight: "400",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: "HappySlim.id — Suplemen Herbal untuk Hidup Lebih Sehat",
@@ -31,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="id" className={`${body.variable} ${script.variable} antialiased`}>
+    <html lang="id" className={`${body.variable} antialiased`}>
       <body className="flex min-h-dvh flex-col font-sans">
         <SiteHeader />
         <main className="flex-1">{children}</main>

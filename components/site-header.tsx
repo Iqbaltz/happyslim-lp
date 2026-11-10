@@ -27,8 +27,8 @@ export function SiteHeader() {
       )}
 
       <div className="container-page flex h-16 items-center justify-between gap-6 md:h-20">
-        <Link href="/" aria-label="HappySlim.id — Beranda" className="text-3xl md:text-[2.1rem]">
-          <Logo />
+        <Link href="/" aria-label="HappySlim.id — Beranda" className="shrink-0">
+          <Logo className="w-28 md:w-32" />
         </Link>
 
         <nav aria-label="Navigasi utama" className="hidden md:block">

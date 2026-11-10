@@ -81,7 +81,7 @@ export default function HomePage() {
             <Image src="/images/product-lineup-all.webp" alt="Seluruh rangkaian produk HappySlim di atas kain linen" fill sizes="(min-width: 768px) 30vw, 50vw" className="object-cover" />
           </div>
           <div className="relative aspect-[4/5] overflow-hidden">
-            <Image src="/images/model-face-mask.webp" alt="Model mengaplikasikan perawatan wajah" fill sizes="(min-width: 768px) 30vw, 50vw" className="object-cover object-left" />
+            <Image src="/images/model-face-cream.webp" alt="Model dengan krim perawatan di pipi" fill sizes="(min-width: 768px) 30vw, 50vw" className="object-cover object-[70%_center]" />
           </div>
         </div>
       </section>

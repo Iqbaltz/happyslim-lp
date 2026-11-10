@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerLinks, socials, stores, tagline, waLink } from "@/lib/site";
-import { Logo } from "./logo";
+import { CoBrandLogo, Logo } from "./logo";
 import { SocialIcon } from "./icons";
 
 const gallery = [
@@ -15,7 +15,7 @@ export function SiteFooter() {
     <footer className="container-page pb-6">
       <div className="grid gap-8 border-t border-line pt-10 md:grid-cols-[1fr_2fr] md:items-center md:pt-12">
         <div>
-          <Logo className="text-5xl" />
+          <Logo className="w-44 md:w-56" />
           <p className="mt-4 max-w-64 text-sm text-muted">{tagline}</p>
         </div>
         <ul className="grid grid-cols-3 gap-2 md:gap-4">
@@ -65,9 +65,10 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <p className="mt-6 text-center text-xs text-muted">
-        Copyright ©HappySlim.id | Designed by House of Kliph
-      </p>
+      <div className="mt-6 flex flex-col items-center gap-3 text-center text-xs text-muted">
+        <p>Copyright ©HappySlim.id | Designed by House of Kliph</p>
+        <CoBrandLogo className="w-40 md:w-44" />
+      </div>
     </footer>
   );
 }
